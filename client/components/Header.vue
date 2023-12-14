@@ -27,8 +27,9 @@
               <UIcon class="h-6 w-6" name="i-heroicons-x-mark-20-solid" />
             </button>
           </div>
-          <NuxtLink v-for="link in links" :key="link.name" :to="link.path" class="text-2xl mb-2 font-semibold">{{
-            link.name }}
+          <NuxtLink @click="loadLink" v-for="link in links" :key="link.name" :to="link.path"
+            class="text-2xl mb-2 font-semibold">{{
+              link.name }}
           </NuxtLink>
         </div>
       </USlideover>
@@ -60,6 +61,10 @@ const links = [
     path: "/",
   },
 ];
+
+const loadLink = () => {
+  isOpen.value = false;
+}
 </script>
 
 <style scoped></style>

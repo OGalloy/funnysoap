@@ -1,8 +1,8 @@
 <template>
-  <div class="flex w-full min-h-screen flex-col bg-white">
+  <div class="flex w-full min-h-screen flex-col bg-white text-black">
     <Header class="w-full" />
-    <div class="px-0 md:px-4 lg:px-10 w-full pt-4 flex justify-center">
-      <div class="w-full lg:w-5xl lg:max-w-5xl">
+    <div class="px-0 md:px-4 w-full pt-4 flex justify-center">
+      <div class="flex justify-center w-full max-w-7xl pt-10">
         <slot />
       </div>
     </div>
