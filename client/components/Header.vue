@@ -54,11 +54,11 @@ const links = [
   },
   {
     name: "О нас",
-    path: "/",
+    path: "/#about",
   },
   {
     name: "Контакты",
-    path: "/",
+    path: "/#contacts",
   },
 ];
 

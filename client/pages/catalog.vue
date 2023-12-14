@@ -13,6 +13,10 @@ const products = [
     title: ''
   }
 ]
+
+useHead({
+  title: "Каталог ручного мыла",
+})
 </script>
 
 <style></style>
