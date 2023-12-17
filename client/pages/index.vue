@@ -12,7 +12,9 @@
           <div class="text-2xl font-light">с доставкой по России</div>
           <div class="pt-10">
             <button class="text-3xl font-extralight rounded-full tracking-widest border-2 border-[#88CCCB] py-2 px-6"
-              @click="$router.push('/catalog')">каталог</button>
+              @click="$router.push('/#catalog')">
+              каталог
+            </button>
           </div>
         </div>
       </div>
@@ -57,9 +59,9 @@
           </div>
           <div class="lg:w-1/2 flex justify-center items-center py-3 bg-[#FBD9DF]">
             <div class="w-full h-[55px] lg:h-[90px] flex justify-evenly">
-              <img class="invert cursor-pointer" src="/vk.png" alt="">
-              <img class="invert cursor-pointer" src="/tg.png" alt="">
-              <img class="invert cursor-pointer" src="/wa.png" alt="">
+              <img class="invert cursor-pointer" src="/vk.png" alt="" />
+              <img class="invert cursor-pointer" src="/tg.png" alt="" />
+              <img class="invert cursor-pointer" src="/wa.png" alt="" />
             </div>
           </div>
         </div>
@@ -75,34 +77,40 @@
         </div>
       </div>
     </div>
+    <div class="w-full pb-24" id="review">
+      <div class="tracking-widest font-normal md:text-5xl text-3xl text-center pb-[61px]">
+        Отзывы
+      </div>
+      <HeroReviews />
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
 const herocards = [
   {
-    img: '/hero1.png',
-    text: 'мы используем только натуральные и органические ингредиенты в производстве нашего мыла, что делает его более безопасным и полезным для кожи.',
-    title: 'Натуральные ингредиенты'
+    img: "/hero1.png",
+    text: "мы используем только натуральные и органические ингредиенты в производстве нашего мыла, что делает его более безопасным и полезным для кожи.",
+    title: "Натуральные ингредиенты",
   },
   {
-    img: '/hero2.png',
-    text: 'каждый кусок нашего мыла изготавливается вручную с любовью и вниманием к деталям, что придает ему уникальный и индивидуальный характер.',
-    title: 'Ручное производство'
+    img: "/hero2.png",
+    text: "каждый кусок нашего мыла изготавливается вручную с любовью и вниманием к деталям, что придает ему уникальный и индивидуальный характер.",
+    title: "Ручное производство",
   },
   {
-    img: '/hero3.png',
-    text: 'мы предлагаем широкий выбор различных видов мыла, от ароматических до травяных, чтобы каждый клиент мог найти подходящий ему вариант.',
-    title: 'Разнообразие ассортимента'
+    img: "/hero3.png",
+    text: "мы предлагаем широкий выбор различных видов мыла, от ароматических до травяных, чтобы каждый клиент мог найти подходящий ему вариант.",
+    title: "Разнообразие ассортимента",
   },
   {
-    img: '/hero4.png',
-    text: 'мы получаем много положительных отзывов от наших довольных клиентов, что свидетельствует о качестве и эффективности нашего продукта.',
-    title: 'Положительные отзывы клиентов'
-  }
-]
+    img: "/hero4.png",
+    text: "мы получаем много положительных отзывов от наших довольных клиентов, что свидетельствует о качестве и эффективности нашего продукта.",
+    title: "Положительные отзывы клиентов",
+  },
+];
 
 useHead({
-  title: 'Изготовление самодельного мыла с доставкой по России',
-})
+  title: "Изготовление самодельного мыла с доставкой по России",
+});
 </script>

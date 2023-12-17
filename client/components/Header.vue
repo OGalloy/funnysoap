@@ -2,13 +2,17 @@
   <header class="flex items-center px-6 py-6 text-black">
     <nav class="flex w-full">
       <div class="w-full flex items-center">
-        <div class="w-1/2 md:flex md:justify-evenly">
-          <NuxtLink to="/" class="text-2xl">
-            <img src="~/assets/logo.svg" />
-          </NuxtLink>
-          <NuxtLink v-for="link in links" :key="link.name" :to="link.path" class="text-2xl font-semibold hidden md:block">
-            {{ link.name
-            }}</NuxtLink>
+        <div class="w-1/2 md:w-full md:flex md:justify-center">
+          <div class="w-full flex flex-row max-w-7xl">
+            <div class="md:w-1/2 lg:-ml-10 md:flex md:justify-evenly">
+              <NuxtLink to="/" class="text-2xl">
+                <img src="~/assets/logo.svg" />
+              </NuxtLink>
+              <NuxtLink v-for="link in links" :key="link.name" :to="link.path"
+                class="text-2xl font-semibold hidden md:block">
+                {{ link.name }}</NuxtLink>
+            </div>
+          </div>
         </div>
         <div class="w-full flex justify-end md:hidden">
           <button class="p-2 block rounded-md hover:bg-neutral-200 transition-colors duration-150" @click="isOpen = true">
@@ -28,8 +32,7 @@
             </button>
           </div>
           <NuxtLink @click="loadLink" v-for="link in links" :key="link.name" :to="link.path"
-            class="text-2xl mb-2 font-semibold">{{
-              link.name }}
+            class="text-2xl mb-2 font-semibold">{{ link.name }}
           </NuxtLink>
         </div>
       </USlideover>
@@ -50,7 +53,7 @@ const overlayTheme = ref({
 const links = [
   {
     name: "Каталог",
-    path: "/catalog",
+    path: "/#catalog",
   },
   {
     name: "О нас",
@@ -64,7 +67,7 @@ const links = [
 
 const loadLink = () => {
   isOpen.value = false;
-}
+};
 </script>
 
 <style scoped></style>
