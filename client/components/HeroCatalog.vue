@@ -2,23 +2,15 @@
   <div class="w-full px-6">
     <div class="navigation-wrapper w-full">
       <div ref="container" class="keen-slider text-black">
-        <div class="keen-slider__slide" v-for="n in 5" :key="n">
-          <div class="w-full flex flex-col rounded-[30px] overflow-hidden">
-            <div class="flex flex-row text-2xl tracking-widest font-light whitespace-nowrap py-5 px-5 bg-[#CCF0F0]">
-              <div class="mr-4 h-[70px] w-[70px]">
-                <img class="rounded-full object-cover bg-white" src="/user.png" />
-              </div>
-              <div class="flex flex-col justify-evenly">
-                <div>Василий</div>
-                <div class="-ml-1">
-                  <img src="/stars.svg" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="flex justify-center text-sm tracking-widest py-5 px-5 bg-[#FBD9DF]">
-              Я очень доволен покупкой самодельного мыла на этом сайте. Огромный
-              выбор ароматов и видов мыла, отличное качество и быстрая доставка.
-              Обязательно буду заказывать здесь еще и рекомендую всем друзьям!
+        <div class="keen-slider__slide" v-for="n in 7" :key="n">
+          <div class="w-full flex flex-col rounded-[15px] overflow-hidden">
+            <div class="flex flex-col justify-center text-2xl tracking-widest whitespace-nowrap py-3 px-3 bg-[#CCF0F0]">
+              <img class="object-cover w-full rounded-[15px] overflow-hidden" src="/image.png" alt="">
+              <span class="mt-2">900 руб.</span>
+              <span class="mt-2">мыло</span>
+              <button class="mt-4 w-full border border-[#525F5F] rounded-[10px] bg-[#FBD9DF] py-2 flex justify-center">
+                в корзину
+              </button>
             </div>
           </div>
         </div>
@@ -51,13 +43,13 @@ const [container, slider] = useKeenSlider({
     },
     "(min-width: 768px)": {
       slides: {
-        perView: 2,
+        perView: 3,
         spacing: 20,
       },
     },
     "(min-width: 1024px)": {
       slides: {
-        perView: 3,
+        perView: 5,
         spacing: 30,
       },
     },

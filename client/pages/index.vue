@@ -83,10 +83,18 @@
       </div>
       <HeroReviews />
     </div>
+    <div class="w-full pb-24" id="catalog">
+      <div class="tracking-widest font-normal md:text-5xl text-3xl text-center pb-[61px]">
+        Краткий перечень товаров
+      </div>
+      <HeroCatalog />
+    </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import type { HeroCatalog } from '#build/components';
+
 const herocards = [
   {
     img: "/hero1.png",
