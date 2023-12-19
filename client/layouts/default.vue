@@ -6,6 +6,7 @@
         <slot />
       </div>
     </div>
+    <Footer class="w-full" />
   </div>
 </template>
 
