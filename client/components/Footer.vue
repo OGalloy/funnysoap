@@ -4,7 +4,9 @@
       <div class="flex justify-center w-full max-w-7xl pb-10">
         <div class="w-full grid grid-rows-1 md:grid-cols-9">
           <div class="w-full md:col-span-2">
-            <img src="~/assets/logo.svg" />
+            <NuxtLink to="/">
+              <img src="~/assets/logo.svg" />
+            </NuxtLink>
           </div>
           <div class="w-full md:col-span-2 flex flex-col pt-5 md:pt-[41px] space-y-1">
             <NuxtLink v-for="link in links" :key="link.name" :to="link.path" class="text-4xl font-extralight">
@@ -39,7 +41,7 @@
 const links = [
   {
     name: "каталог",
-    path: "/#catalog",
+    path: "/catalog",
   },
   {
     name: "о нас",

@@ -5,12 +5,14 @@
         <div class="keen-slider__slide" v-for="n in 7" :key="n">
           <div class="w-full flex flex-col rounded-[15px] overflow-hidden">
             <div class="flex flex-col justify-center text-2xl tracking-widest whitespace-nowrap py-3 px-3 bg-[#CCF0F0]">
-              <img class="object-cover w-full rounded-[15px] overflow-hidden" src="/image.png" alt="">
+              <img class="object-cover w-full rounded-[15px] overflow-hidden" src="/image.png" alt="" />
               <span class="mt-2">900 руб.</span>
               <span class="mt-2">мыло</span>
-              <button class="mt-4 w-full border border-[#525F5F] rounded-[10px] bg-[#FBD9DF] py-2 flex justify-center">
-                в корзину
-              </button>
+              <NuxtLink to="/catalog">
+                <button class="mt-4 w-full border border-[#525F5F] rounded-[10px] bg-[#FBD9DF] py-2 flex justify-center">
+                  в корзину
+                </button>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -108,7 +110,7 @@ console.log(slider);
 }
 
 .dot.active {
-  background: #5A8A8A;
+  background: #5a8a8a;
 }
 
 .arrow {

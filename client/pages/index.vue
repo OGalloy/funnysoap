@@ -11,10 +11,11 @@
           </div>
           <div class="text-2xl font-light">с доставкой по России</div>
           <div class="pt-10">
-            <button class="text-3xl font-extralight rounded-full tracking-widest border-2 border-[#88CCCB] py-2 px-6"
-              @click="$router.push('/#catalog')">
-              каталог
-            </button>
+            <NuxtLink to="/catalog">
+              <button class="text-3xl font-extralight rounded-full tracking-widest border-2 border-[#88CCCB] py-2 px-6">
+                каталог
+              </button>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -93,7 +94,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { HeroCatalog } from '#build/components';
+import type { HeroCatalog } from "#build/components";
 
 const herocards = [
   {

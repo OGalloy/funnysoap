@@ -53,7 +53,7 @@ const overlayTheme = ref({
 const links = [
   {
     name: "Каталог",
-    path: "/#catalog",
+    path: "/catalog",
   },
   {
     name: "О нас",
